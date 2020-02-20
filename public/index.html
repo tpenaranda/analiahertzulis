@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Analia Hertzulis</title>
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but this site doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <div class="middle-screen">
+      <h1>Analia Hertzlulis</h1>
+      <div class="lds-heart-container"><div class="lds-heart"><div></div></div></div>
+      <h3>Estamos pintando el sitio, volvé pronto...</h3>
+    </div>
+    <style type="text/css">
+      .middle-screen {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      h1 {
+        font-family: 'Lacquer', sans-serif;
+      }
+      h3 {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .lds-heart-container {
+        text-align: center;
+      }
+      .lds-heart {
+        display: inline-block;
+        position: relative;
+        width: 64px;
+        height: 64px;
+        transform: rotate(45deg);
+        transform-origin: 32px 32px;
+      }
+      .lds-heart div {
+        top: 23px;
+        left: 19px;
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        background: #FF6666;
+        animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .lds-heart.quartz-gray div {
+        background: #e7e9e7;
+      }
+      .lds-heart div:after,
+      .lds-heart div:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 26px;
+        height: 26px;
+        background: #FF6666;
+      }
+      .lds-heart.quartz-gray div:after,
+      .lds-heart.quartz-gray div:before {
+        background: #e7e9e7;
+      }
+      .lds-heart div:before {
+        left: -17px;
+        border-radius: 50% 0 0 50%;
+      }
+      .lds-heart div:after {
+        top: -17px;
+        border-radius: 50% 50% 0 0;
+      }
+      @keyframes lds-heart {
+        0% {
+          transform: scale(0.95);
+        }
+        5% {
+          transform: scale(1.1);
+        }
+        39% {
+          transform: scale(0.85);
+        }
+        45% {
+          transform: scale(1);
+        }
+        60% {
+          transform: scale(0.95);
+        }
+        100% {
+          transform: scale(0.9);
+        }
+      }
+    </style>
+  </body>
+</html>
