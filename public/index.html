@@ -14,9 +14,9 @@
     </noscript>
     <div id="app">
       <div class="middle-screen">
-      <h1>Analía Hertzulis</h1>
-      <div class="lds-heart-container"><div class="lds-heart"><div></div></div></div>
-      <h3>Estamos pintando el sitio, volvé en unos días...</h3>
+        <h1>Analía Hertzulis</h1>
+        <div class="lds-heart animated"><div></div></div>
+      </div>
     </div>
     <style type="text/css">
       .middle-screen {
@@ -24,15 +24,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;
       }
       h1 {
         font-family: 'Lacquer', sans-serif;
       }
       h3 {
         font-family: 'Montserrat', sans-serif;
-      }
-      .lds-heart-container {
-        text-align: center;
       }
       .lds-heart {
         display: inline-block;
@@ -49,10 +47,12 @@
         width: 26px;
         height: 26px;
         background: #FF6666;
+      }
+      .lds-heart.animated div {
         animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
       }
-      .lds-heart.quartz-gray div {
-        background: #e7e9e7;
+      .lds-heart.small div {
+        transform: scale(.62);
       }
       .lds-heart div:after,
       .lds-heart div:before {
@@ -62,10 +62,6 @@
         width: 26px;
         height: 26px;
         background: #FF6666;
-      }
-      .lds-heart.quartz-gray div:after,
-      .lds-heart.quartz-gray div:before {
-        background: #e7e9e7;
       }
       .lds-heart div:before {
         left: -17px;
