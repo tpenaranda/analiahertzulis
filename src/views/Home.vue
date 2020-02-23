@@ -53,8 +53,11 @@ export default {
       }, {
         details: ['frameless'],
         filename: 'dualidad.jpg',
+        medium: 'tempera_on_paper',
+        price_euros: '120',
+        size_x: '32.5',
+        size_y: '45.8',
         title: 'Dualidad',
-        orientation: 'h'
       }, {
         details: ['frameless'],
         filename: 'elefante.jpg',
