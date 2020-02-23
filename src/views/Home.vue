@@ -33,7 +33,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Corazon de Cristal',
+        title: 'Corazon de Cristal'
       }, {
         details: ['frameless'],
         filename: 'corazon.jpg',
@@ -41,7 +41,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Corazon',
+        title: 'Corazon'
       }, {
         details: ['frameless'],
         filename: 'diosa-del-fuego.jpg',
@@ -49,7 +49,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Diosa del fuego',
+        title: 'Diosa del fuego'
       }, {
         details: ['frameless'],
         filename: 'dualidad.jpg',
@@ -57,7 +57,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Dualidad',
+        title: 'Dualidad'
       }, {
         details: ['frameless'],
         filename: 'elefante.jpg',
@@ -65,7 +65,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Elefante',
+        title: 'Elefante'
       }, {
         details: ['frameless'],
         filename: 'fluir.jpg',
@@ -73,7 +73,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Fluir',
+        title: 'Fluir'
       }, {
         details: ['frameless'],
         filename: 'magia.jpg',
@@ -81,7 +81,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Magia',
+        title: 'Magia'
       }, {
         details: ['frameless'],
         filename: 'natacha.jpg',
@@ -89,7 +89,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Natacha',
+        title: 'Natacha'
       }, {
         details: ['frameless'],
         filename: 'yaguar.jpg',
@@ -97,7 +97,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Yaguar',
+        title: 'Yaguar'
       }
     ]
   }),
