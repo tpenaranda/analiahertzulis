@@ -8,22 +8,28 @@ Vue.use(VueI18n)
 Vue.config.productionTip = false
 
 const i18n = new VueI18n({
-  locale: 'en',
+  locale: 'es',
   messages: {
     en: {
+      contact: 'contact',
+      frameless: 'no frame',
       name: 'english',
-      work: 'work',
-      contact: 'contact'
+      tempera_on_paper: 'tempera on paper',
+      work: 'work'
     },
     es: {
+      contact: 'contacto',
+      frameless: 'sin marco',
       name: 'castellano',
-      work: 'obras',
-      contact: 'contacto'
+      tempera_on_paper: 'tempera sobre papel',
+      work: 'obras'
     },
     ca: {
+      contact: 'contacte',
+      frameless: 'sensa marc',
       name: 'català',
-      work: 'obres',
-      contact: 'contacte'
+      tempera_on_paper: 'tremp sobre paper',
+      work: 'obres'
     }
   }
 })

@@ -4,6 +4,9 @@ module.exports = {
     fontFamily: {
       'lacquer': ['Lacquer', 'sans-serif'],
       'montserrat': ['Montserrat', 'sans-serif']
+    },
+    minWidth: {
+     '320': '320px'
     }
   },
   variants: {},
