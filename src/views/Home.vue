@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <div class="flex flex-wrap items-center content-center justify-around mt-3">
-      <div v-for="(work, index) in works" :key="index" class="w-1/4 min-w-320 my-3 px-6 flex-1">
+    <div class="flex flex-wrap items-center content-center justify-around mt-2">
+      <div v-for="(work, index) in works" :key="index" class="w-1/4 min-w-320 my-4 lg:my-8 px-4 lg:px-8">
         <work-card :data="work"></work-card>
       </div>
     </div>

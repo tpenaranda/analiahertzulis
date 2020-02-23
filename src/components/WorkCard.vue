@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-sm m-auto rounded overflow-hidden shadow-lg bg-white border border-black">
-    <div @click="$refs.modal.show()" class="m-3 border border-gray-400">
+    <div @click="$refs.modal.show()" class="m-3 border border-gray-400 rounded overflow-hidden">
       <img class="w-full" :src="`/img/works/${data.filename}`" :alt="data.title">
     </div>
     <div class="px-6 py-4">
