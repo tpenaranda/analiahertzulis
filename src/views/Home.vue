@@ -2,18 +2,29 @@
   <div class="home">
     <div class="flex flex-wrap items-center content-center justify-around mt-2">
       <div v-for="(work, index) in works" :key="index" class="w-1/4 min-w-320 my-4 lg:my-8 px-4 lg:px-8">
-        <work-card :data="work"></work-card>
+        <work-card :data="work" @imgClick="handleImageClick"></work-card>
       </div>
     </div>
+    <t-modal ref="modal" :header="modalData.title" width="800" :pivot-y=".5" body-class="flex-grow" header-class="font-montserrat p-1 border-b font-bold text-2xl">
+      <img class="m-auto px-4" :src="`/img/works/${modalData.filename}`" :alt="modalData.title">
+      <div class="text-left p-8 border-t">
+        <p>{{ $t(modalData.medium) | capitalize }}</p>
+        <p>{{ modalData.size_x }} x {{ modalData.size_y }} cm</p>
+        <p>{{ modalData.details.map((i) => $t(i)).join(', ') | capitalize }}</p>
+        <p class="font-bold">{{ modalData.price_euros }},00 €</p>
+      </div>
+    </t-modal>
   </div>
 </template>
 
 <script>
+import TModal from 'vue-tailwind/src/components/TModal.vue'
 import WorkCard from '../components/WorkCard'
 
 export default {
   name: 'Home',
   components: {
+    TModal,
     WorkCard
   },
   data: () => ({
@@ -25,7 +36,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Corazon en blanco y negro'
+        title: 'Corazón en blanco y negro'
       }, {
         details: ['frameless'],
         filename: 'corazon-cristal.jpg',
@@ -33,7 +44,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Corazon de Cristal'
+        title: 'Corazón de Cristal'
       }, {
         details: ['frameless'],
         filename: 'corazon.jpg',
@@ -41,7 +52,7 @@ export default {
         price_euros: '120',
         size_x: '32.5',
         size_y: '45.8',
-        title: 'Corazon'
+        title: 'Corazón'
       }, {
         details: ['frameless'],
         filename: 'diosa-del-fuego.jpg',
@@ -99,10 +110,19 @@ export default {
         size_y: '45.8',
         title: 'Yaguar'
       }
-    ]
+    ],
+    modalData: {
+      details: []
+    }
   }),
   created () {
     this.works.sort(() => Math.random() - 0.5)
+  },
+  methods: {
+    handleImageClick (data) {
+      this.modalData = data
+      this.$refs.modal.show()
+    }
   }
 }
 </script>
