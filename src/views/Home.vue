@@ -5,7 +5,7 @@
         <work-card :data="work" @imgClick="handleImageClick"></work-card>
       </div>
     </div>
-    <t-modal ref="modal" :header="modalData.title" width="800" :pivot-y=".5" body-class="flex-grow" header-class="font-montserrat px-8 py-1 border-b font-bold text-2xl">
+    <t-modal ref="modal" :header="modalData.title" width="800" :pivot-y=".5" body-class="flex-grow" header-class="font-montserrat px-10 py-1 border-b font-bold text-2xl">
       <img class="m-auto px-4" :src="`/img/works/${modalData.filename}`" :alt="modalData.title">
       <div class="text-left p-8 border-t">
         <p>{{ $t(modalData.medium) | capitalize }}</p>
